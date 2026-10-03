@@ -8,20 +8,20 @@ Llena cada espacio conforme avances en las fases de [PRACTICA.md](PRACTICA.md).
 
 **1.1 El problema con mis propias palabras**
 
-[Inserta aquí tu respuesta]
+Creacion de una aplicacion de musica en la cual se pueda identificar biblioteca duracion  genero , artista   , e incluir podcast  y un numero de episodios , que las play list agrupen   por bibliotecas
 
 **1.2 Sustantivos (posibles clases) y verbos (posibles métodos)**
 
-Sustantivos: _____
+Sustantivos: Cancion ,Playlist,podcast , Duracion,Biblioteca,artista,genero , titulos  presentador ,episodios 
 
-Verbos: _____
+Verbos: organizar, reproducir , duracion ,   agregar a biblioteca ,  contar pista , , generar playlist
 
 **1.3 Relaciones** (completa con "es un", "tiene un" o "usa un")
 
-*   Una canción _____ pista.
-*   Un podcast _____ pista.
-*   Una pista _____ duración.
-*   Una playlist _____ canción.
+*   Una canción es una pista.
+*   Un podcast es una pista.
+*   Una pista tiene una duración.
+*   Una playlist usa una canción.
 
 ## Fase 2. Diseñar la solución
 
