@@ -45,17 +45,17 @@ Verbos: organizar, reproducir , duracion ,   agregar a biblioteca ,  contar pist
 
 | # | Duda | Cómo la resolví | Fuente |
 | --- | --- | --- | --- |
-| 1 | _____ | _____ | _____ |
-| 2 | _____ | _____ | _____ |
-| 3 | _____ | _____ | _____ |
+| 1 | como  lograr que imprimir los minutos | separarlos  en manera de ingresarse_ | un amigo |
+| 2 | como  comprender el     SetConsoleOutputCP(CP_UTF8); | pregunte y es para que no tenga errores con algunos  caracteres que imprimia mal | chat |
+| 3 | como conectar las  funciones |  ayudo con conexione sy funcionamientos_ | gemini_ |
 
 **3.2 Experimentos guiados**
 
-Experimento 1, orden de construcción y destrucción: _____
+Experimento 1, orden de construcción y destrucción: no entendi hacerlo la vd 
 
-Experimento 2, ¿quién es dueño de quién?: _____
+Experimento 2, ¿quién es dueño de quién?: play listes la base de todo si puede haber playlist sin canciones pero no canciones sin ella
 
-Experimento 3, un objeto en dos playlists: _____
+Experimento 3, un objeto en dos playlists:  en esta no hubo problema al agregar tantas canciones o   podcast se requieran
 
 ## Fase 4. Probar y mejorar
 
@@ -76,7 +76,7 @@ Experimento 3, un objeto en dos playlists: _____
 
 | # | Falla o mejora detectada | Qué cambié | Por qué |
 | --- | --- | --- | --- |
-| 1 | _____ | _____ | _____ |
+| 1 | no permitia agregar canciones | modifique un vector para poder agregar las canciones | _____ |
 | 2 | _____ | _____ | _____ |
 
 Retos opcionales que intenté: _____
@@ -84,15 +84,12 @@ Retos opcionales que intenté: _____
 ## Fase 5. Publicar en GitHub
 
 **5.1 Enlace a mi fork**
-
-[Inserta aquí el enlace a tu fork]
+https://github.com/FernandoRoman1709/ulsa_ime_3_poo_playlist
 
 ## Cierre y reflexión
 
 **6.1 ¿Qué aprendiste en esta práctica?**
-
-[Inserta aquí tu respuesta]
+aprendi a ver los objetos dentro de lo que seria para trabajar en  la playlist, poder juntar problemas y hacer un diagrama diferenciando como mantener hermncia agregacion y composicion, aun est poer aprender a modificar y entender mejor la ia para  explicarme y comprender  mas  el funcionamiento de el codigo
 
 **6.2 ¿Qué cambiarías de tu proceso la próxima vez?**
-
-[Inserta aquí tu respuesta]
+la manera de comprendere el problema y la manera en que puedo ejecutarlo  sigo confundiendo como mantenr os cpp y h juntos y que no salgan demasiados errores  cambiaria incluso hacerlo mas legible y comprensible
