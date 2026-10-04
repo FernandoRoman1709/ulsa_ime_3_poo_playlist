@@ -33,11 +33,11 @@ Verbos: organizar, reproducir , duracion ,   agregar a biblioteca ,  contar pist
 
 | Relación | Tipo | ¿Por qué? |
 | --- | --- | --- |
-| Cancion - Pista | _____ | _____ |
-| Podcast - Pista | _____ | _____ |
-| Pista - Duracion | _____ | _____ |
-| Playlist - Cancion | _____ | _____ |
-| Playlist - Podcast | _____ | _____ |
+| Cancion - Pista | herencia |  por que pista le da  titulo y duracion e informacion necesaria|
+| Podcast - Pista | herencia | le da informacion a la pista para que pueda mostrarse|
+| Pista - Duracion | composicion | por que la pista tiene una duracion  |
+| Playlist - Cancion | agregacion  o compsicion| no estoy seguro si tiene o usa |
+| Playlist - Podcast | agregacion o composicion | no estoy seguro si tiene o usa  |
 
 ## Fase 3. Implementar
 

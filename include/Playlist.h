@@ -27,4 +27,20 @@
 // Pregunta: la Playlist no tiene destructor que haga delete de las pistas.
 // ¿Por qué eso es lo correcto en una agregación?
 
+class Playlist {
+private:
+    std::string nombre;
+    std::vector<Cancion*> canciones;
+    std::vector<Podcast*> podcasts;
+
+public:
+    explicit Playlist(const std::string& nombre);
+
+    bool agregarCancion(Cancion* cancion);
+    bool agregarPodcast(Podcast* podcast);
+    int cantidadPistas() const;
+    Duracion duracionTotal() const;
+    void mostrar() const;
+};
+
 #endif

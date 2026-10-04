@@ -1,22 +1,85 @@
 // Implementación de la clase Playlist.
 
 #include "Playlist.h"
-
 #include <iostream>
 
-// TODO 4.1: implementa el constructor de Playlist.
+Playlist::Playlist(const std::string& nombre) : nombre(nombre) {}
 
-// TODO 4.2: implementa  bool Playlist::agregarCancion(Cancion* cancion)
-//   Devuelve false si el puntero es nullptr o si la canción ya está en la
-//   playlist; en otro caso la agrega y devuelve true.
+bool Playlist::agregarCancion(Cancion* cancion) {
+    if (cancion == nullptr) {
+        return false;
+    }
 
-// TODO 4.3: implementa  bool Playlist::agregarPodcast(Podcast* podcast)
-//   Mismas reglas que agregarCancion.
+    for (const auto& c : canciones) {
+        if (c == cancion) {
+            return false;
+        }
+    }
 
-// TODO 4.4: implementa  int Playlist::cantidadPistas() const
+    canciones.push_back(cancion);
+    return true;
+}
 
-// TODO 4.5: implementa  Duracion Playlist::duracionTotal() const
-//   Suma los segundos de todas las pistas y devuelve una Duracion.
+bool Playlist::agregarPodcast(Podcast* podcast) {
+    if (podcast == nullptr) {
+        return false;
+    }
 
-// TODO 4.6: implementa  void Playlist::mostrar() const
-//   Imprime el nombre, cada pista, la cantidad de pistas y la duración total.
+    for (const auto& p : podcasts) {
+        if (p == podcast) {
+            return false;
+        }
+    }
+
+    podcasts.push_back(podcast);
+    return true;
+}
+
+int Playlist::cantidadPistas() const {
+    return static_cast<int>(canciones.size() + podcasts.size());
+}
+
+Duracion Playlist::duracionTotal() const {
+    int acumuladoSegundos = 0;
+
+    for (const auto& c : canciones) {
+        acumuladoSegundos += c->getDuracion().totalSegundos();
+    }
+
+    for (const auto& p : podcasts) {
+        acumuladoSegundos += p->getDuracion().totalSegundos();
+    }
+
+    return Duracion(0, acumuladoSegundos);
+}
+
+void Playlist::mostrar() const {
+    std::cout << "========================================" << std::endl;
+    std::cout << "Playlist: " << nombre << std::endl;
+    std::cout << "========================================" << std::endl;
+
+    std::cout << "--- Canciones (" << canciones.size() << ") ---" << std::endl;
+    if (canciones.empty()) {
+        std::cout << "  (Sin canciones)" << std::endl;
+    } else {
+        for (const auto& c : canciones) {
+            std::cout << "  * ";
+            c->mostrar();
+        }
+    }
+
+    std::cout << "--- Podcasts (" << podcasts.size() << ") ---" << std::endl;
+    if (podcasts.empty()) {
+        std::cout << "  (Sin podcasts)" << std::endl;
+    } else {
+        for (const auto& p : podcasts) {
+            std::cout << "  * ";
+            p->mostrar();
+        }
+    }
+
+    std::cout << "----------------------------------------" << std::endl;
+    std::cout << "Total de pistas: " << cantidadPistas() << " | Duración total: ";
+    duracionTotal().imprimir();
+    std::cout << "\n========================================\n" << std::endl;
+}
