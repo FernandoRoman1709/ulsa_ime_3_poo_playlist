@@ -63,14 +63,14 @@ Experimento 3, un objeto en dos playlists: _____
 
 | # | Caso | Resultado esperado | Resultado obtenido | ¿Pasa? |
 | --- | --- | --- | --- | --- |
-| 1 | Duración normal `Duracion(3, 45)` | 3:45 | _____ | _____ |
-| 2 | Segundos mayores a 59 `Duracion(0, 75)` | 1:15 | _____ | _____ |
-| 3 | Valores negativos `Duracion(-2, 10)` | 0:00 | _____ | _____ |
-| 4 | Título vacío | "Sin título" | _____ | _____ |
-| 5 | Playlist vacía | 0:00 y 0 pistas | _____ | _____ |
-| 6 | Canción duplicada | La segunda vez devuelve `false` | _____ | _____ |
+| 1 | Duración normal `Duracion(3, 45)` | 3:45 | 3:45 | _____ |
+| 2 | Segundos mayores a 59 `Duracion(0, 75)` | 1:15 |  | se modifico para agregar minutos y segundos separados |
+| 3 | Valores negativos `Duracion(-2, 10)` | 0:00 | 0:00 | 0:00 |
+| 4 | Título vacío | "Sin título" | "Sin título" | "Sin título"|
+| 5 | Playlist vacía | 0:00 y 0 pistas | sin playlis y podcast duracion 0:00 | _____ |
+| 6 | Canción duplicada | La segunda vez devuelve `false` | lo vuelve a ingresar por segunda vez  | _____ |
 | 7 | Puntero nulo | Devuelve `false` | _____ | _____ |
-| 8 | Total con 2 canciones y 1 podcast | Suma correcta en m:ss | _____ | _____ |
+| 8 | Total con 2 canciones y 1 podcast | Suma correcta en m:ss | suma correcta | suma correcta |
 
 **4.2 Bitácora de mejoras**
 
